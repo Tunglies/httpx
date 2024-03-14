@@ -424,7 +424,7 @@ def is_safe(string: str, safe: str = "/") -> bool:
     """
     Determine if a given string is already quote-safe.
     """
-    NON_ESCAPED_CHARS = UNRESERVED_CHARACTERS + safe + "%"
+    NON_ESCAPED_CHARS = UNRESERVED_CHARACTERS + safe
 
     # All characters must already be non-escaping or '%'
     for char in string:
